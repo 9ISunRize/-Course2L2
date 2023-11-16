@@ -47,10 +47,12 @@ public class hogwarts {
     }
 
     public void compare(hogwarts hogwarts) {
-        if (power + transgration < hogwarts.getPower() + hogwarts.getTransgration()) {
+        if (power + transgration > hogwarts.getPower() + hogwarts.getTransgration()) {
             System.out.println(nameOfStudent + " обладает бОльшей мощностью магии, чем " + hogwarts.getNameOfStudent());
-        } else {
+        } else if (power + transgration < hogwarts.getPower() + hogwarts.getTransgration()) {
             System.out.println(hogwarts.getNameOfStudent() + " обладает бОльшей мощностью магии, чем " + nameOfStudent);
+        } else {System.out.println(hogwarts.getNameOfStudent() + " обладает равной мощностью магии, с " + nameOfStudent);
+
         }
     }
 }

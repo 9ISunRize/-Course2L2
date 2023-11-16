@@ -69,10 +69,12 @@ public class Slytherin extends hogwarts {
     }
 
     public void compare(Slytherin Slytherin) {
-        if (cunning + determination + ambition + resourcefulness + thirstForPower < Slytherin.getCunning() + Slytherin.getDetermination() + Slytherin.getAmbition() + Slytherin.getResourcefulness() + Slytherin.getThirstForPower()) {
+        if (cunning + determination + ambition + resourcefulness + thirstForPower > Slytherin.getCunning() + Slytherin.getDetermination() + Slytherin.getAmbition() + Slytherin.getResourcefulness() + Slytherin.getThirstForPower()) {
             System.out.println(nameOfStudent + " лучший Гриффиндорец, чем " + Slytherin.getNameOfStudent());
-        } else {
+        } else if (cunning + determination + ambition + resourcefulness + thirstForPower < Slytherin.getCunning() + Slytherin.getDetermination() + Slytherin.getAmbition() + Slytherin.getResourcefulness() + Slytherin.getThirstForPower()){
             System.out.println(Slytherin.getNameOfStudent() + " лучший Гриффиндорец, чем " + nameOfStudent);
+        } else {
+            System.out.println(Slytherin.getNameOfStudent() + " набрал/а одинаковые баллы с " + nameOfStudent);
         }
     }
 }

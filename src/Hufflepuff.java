@@ -47,10 +47,12 @@ public class Hufflepuff extends hogwarts {
     }
 
     public void compare(Hufflepuff Hufflepuff) {
-        if (hardworking + loyal + honest < Hufflepuff.getHardworking() + Hufflepuff.getLoyal() + Hufflepuff.getHonest()) {
+        if (hardworking + loyal + honest > Hufflepuff.getHardworking() + Hufflepuff.getLoyal() + Hufflepuff.getHonest()) {
             System.out.println(nameOfStudent + " лучший Гриффиндорец, чем " + Hufflepuff.getNameOfStudent());
-        } else {
+        } else if (hardworking + loyal + honest < Hufflepuff.getHardworking() + Hufflepuff.getLoyal() + Hufflepuff.getHonest()) {
             System.out.println(Hufflepuff.getNameOfStudent() + " лучший Гриффиндорец, чем " + nameOfStudent);
+        } else {
+            System.out.println(Hufflepuff.getNameOfStudent() + " набрал/а одинаковые баллы с " + nameOfStudent);
         }
     }
 }

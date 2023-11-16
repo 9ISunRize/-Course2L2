@@ -58,10 +58,12 @@ public class Ravenclaw extends hogwarts {
     }
 
     public void compare(Ravenclaw Ravenclaw) {
-        if (smart + wise + witty + fullOfCreativity < Ravenclaw.getSmart() + Ravenclaw.getWise() + Ravenclaw.getWitty() + Ravenclaw.getFullOfCreativity()) {
+        if (smart + wise + witty + fullOfCreativity > Ravenclaw.getSmart() + Ravenclaw.getWise() + Ravenclaw.getWitty() + Ravenclaw.getFullOfCreativity()) {
             System.out.println(nameOfStudent + " лучший Гриффиндорец, чем  " + Ravenclaw.getNameOfStudent());
-        } else {
+        } else if (smart + wise + witty + fullOfCreativity < Ravenclaw.getSmart() + Ravenclaw.getWise() + Ravenclaw.getWitty() + Ravenclaw.getFullOfCreativity()){
             System.out.println(Ravenclaw.getNameOfStudent() + " лучший Гриффиндорец, чем " + nameOfStudent);
+        } else {
+            System.out.println(Ravenclaw.getNameOfStudent() + " набрал/а одинаковые баллы с " + nameOfStudent);
         }
     }
 }
