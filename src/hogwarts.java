@@ -51,7 +51,8 @@ public class hogwarts {
             System.out.println(nameOfStudent + " обладает бОльшей мощностью магии, чем " + hogwarts.getNameOfStudent());
         } else if (power + transgration < hogwarts.getPower() + hogwarts.getTransgration()) {
             System.out.println(hogwarts.getNameOfStudent() + " обладает бОльшей мощностью магии, чем " + nameOfStudent);
-        } else {System.out.println(hogwarts.getNameOfStudent() + " обладает равной мощностью магии, с " + nameOfStudent);
+        } else {
+            System.out.println(hogwarts.getNameOfStudent() + " обладает равной мощностью магии, с " + nameOfStudent);
 
         }
     }
